@@ -38,13 +38,13 @@
     $(".dept_info").click(function () {
         $(this).attr("href", "/hrms/dept/getDeptList");
     });
-    //员工清零这个功能暂未实现
+    //员工清零
     $(".emp_clearall_btn").click(function () {
-        alert("对不起，您暂无权限进行操作！请先获取权限");
+        $(this).attr("href", "/hrms/emp/clearAllEmp");
     });
     //部门清零这个功能暂未实现
     $(".dept_clearall_btn").click(function () {
-        alert("对不起，您暂无权限进行操作！请先获取权限");
+        $(this).attr("href", "/hrms/dept/clearAllDept");
     });
 </script>
 </body>

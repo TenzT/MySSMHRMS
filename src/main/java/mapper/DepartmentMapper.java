@@ -25,6 +25,11 @@ public interface DepartmentMapper {
     int deleteDeptById(@Param("deptId") Integer deptId);
 
     /**
+     * 删除所有部门信息
+     */
+    void deleteAllDept();
+
+    /**
      * =================================更改============================================
      */
     int updateDeptById(@Param("deptId") Integer deptId,

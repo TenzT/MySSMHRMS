@@ -43,4 +43,5 @@ public class DepartmentService {
         return departmentMapper.selectDeptList();
     }
 
+    public void deleteAllDept(){ departmentMapper.deleteAllDept();}
 }

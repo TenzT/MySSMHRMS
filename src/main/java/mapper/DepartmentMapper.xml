@@ -32,4 +32,7 @@
         dept_id = #{deptId}
     </update>
 
+    <delete id="deleteAllDept">
+        DELETE from tbl_dept
+    </delete>
 </mapper>

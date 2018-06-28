@@ -18,8 +18,18 @@ public interface EmployeeMapper {
     /**
      * ================================= 删除 ============================================
      */
+    /**
+     * 根据id删除员工
+     * @param empId
+     * @return
+     */
     @Delete({"DELETE FROM", TABLE_NAME, "WHERE emp_id = #{empId}"})
     int deleteOneById(@Param("empId") Integer empId);
+
+    /**
+     * 删除所有员工
+     */
+    void deleteAllEmp();
     /**
      * ================================= 修改 ============================================
      */

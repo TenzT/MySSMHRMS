@@ -34,6 +34,6 @@ public class EmployeeService {
     public int addEmp(Employee employee){
         return employeeMapper.insertOne(employee);
     }
-
+    public void deleteAllEmp(){ employeeMapper.deleteAllEmp(); }
 
 }

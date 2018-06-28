@@ -46,7 +46,7 @@
 
     $(".dept_edit_btn").click(function () {
         edit_deptId = $(this).parent().parent().find("td:eq(0)").text();
-        alert("id"+edit_deptId);
+        // alert("id"+edit_deptId);
         //查询对应deptId的部门信息
         $.ajax({
             url:"/hrms/dept/getDeptById/"+edit_deptId,

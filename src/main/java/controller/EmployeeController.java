@@ -40,6 +40,17 @@ public class EmployeeController {
     }
 
     /**
+     * 删除所有员工
+     * @return
+     */
+    @RequestMapping(value = "/clearAllEmp", method = RequestMethod.GET)
+//    @ResponseBody
+    public String clearAllEmp() {
+        employeeService.deleteAllEmp();
+        return "redirect:/hrms/emp/getEmpList";
+    }
+
+    /**
      * 更改员工信息
      * @param empId
      * @param employee

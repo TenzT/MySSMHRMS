@@ -40,6 +40,15 @@ public class DepartmentController {
     }
 
     /**
+     * 删除所有部门
+     */
+    @RequestMapping(value = "/clearAllDept", method = RequestMethod.GET)
+    public String clearAllDept(){
+        departmentService.deleteAllDept();
+        return "redirect:/hrms/dept/getDeptList";
+    }
+
+    /**
      * 部门更改
      * @param deptId
      * @param department
