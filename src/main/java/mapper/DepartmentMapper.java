@@ -65,5 +65,4 @@ public interface DepartmentMapper {
     @Select({"SELECT COUNT(*) FROM", TABLE_NAME})
     int countDepts();
 
-
 }
