@@ -110,7 +110,7 @@
     </div><!-- /.hrms_body -->
 </div><!-- /.container -->
 
-<%@ include file="employeeAdd.jsp"%>
+<%@ include file="employeeAdd.jsp"%>        <!--嵌入员工增加脚本，相当于直接写到本页面上-->
 <%@ include file="employeeUpdate.jsp"%>
 
 

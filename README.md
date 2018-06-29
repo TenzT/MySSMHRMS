@@ -3,7 +3,7 @@
 ## 部门记录表
 ```
 CREATE TABLE `tbl_dept` (
-  `dept_id` int(11) NOT NULL DEFAULT '0' COMMENT '部门的id',
+  `dept_id` int(11) NOT NULL AUTO_INCREMENT COMMENT COMMENT '部门的id',
   `dept_name` varchar(255) NOT NULL DEFAULT '' COMMENT '部门的名字',
   `dept_leader` varchar(255) NOT NULL DEFAULT '' COMMENT '部门主管',
   PRIMARY KEY (`dept_id`)

@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" id="company_logo" href="#">XXX公司LOGO</a>
+                <a class="navbar-brand" id="company_logo" href="#"><img src="/static/img/logo.jpg" height="40" width="40"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="hrms-navbar-collapse-1">
@@ -35,9 +35,9 @@
                         <a href="#">公司介绍 <span class="sr-only">(current)</span>  </a>
                     </li>
                     <li><a href="#">人力资源部</a></li>
-                    <li><a href="#">请假申请</a></li>
-                    <li><a href="#">报销申请</a></li>
-                    <li><a href="#">出勤记录</a></li>
+                    <%--<li><a href="#">请假申请</a></li>--%>
+                    <%--<li><a href="#">报销申请</a></li>--%>
+                    <%--<li><a href="#">出勤记录</a></li>--%>
                 </ul>
 
                 <form class="navbar-form navbar-left">

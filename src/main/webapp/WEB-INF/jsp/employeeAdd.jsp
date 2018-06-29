@@ -80,6 +80,7 @@
             }
         });
 
+        //激活模态框
         $('.emp-add-modal').modal({
             backdrop:static,
             keyboard:true

@@ -40,11 +40,15 @@
     });
     //员工清零
     $(".emp_clearall_btn").click(function () {
-        $(this).attr("href", "/hrms/emp/clearAllEmp");
+        if (confirm("确认删除所有员工信息吗？")){
+            $(this).attr("href", "/hrms/emp/clearAllEmp");
+        }
     });
     //部门清零这个功能暂未实现
     $(".dept_clearall_btn").click(function () {
-        $(this).attr("href", "/hrms/dept/clearAllDept");
+        if (confirm("确认删除所有部门信息吗？")){
+            $(this).attr("href", "/hrms/dept/clearAllDept");
+        }
     });
 </script>
 </body>
