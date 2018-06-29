@@ -39,8 +39,16 @@ http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
 		<value>5242880</value>
 	</property>
 </bean>
-
-	<!--添加静态资源访问-->
-	<mvc:resources  mapping="/static/**" location="/static/" />
+	
+<!--拦截器-->
+<mvc:interceptors>
+	<mvc:interceptor>
+		<mvc:mapping path="/**"/>
+		<bean class="interceptor.LoginInterceptor"/>
+	</mvc:interceptor>
+</mvc:interceptors>
+	
+<!--添加静态资源访问-->
+<mvc:resources  mapping="/static/**" location="/static/" />
 
 </beans>

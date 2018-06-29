@@ -59,7 +59,6 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div><!-- /#hrms_carousel_1 -->
-
                 </div><!-- /.panel-body -->
             </div><!-- /.panel -->
         </div><!-- /.hrms_main_ad -->
